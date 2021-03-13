@@ -11,9 +11,9 @@ ws2 = wb.create_sheet("Mysheet", 0) # insert at first position
 
 # 日本語特に問題なし
 ws2.cell(row=1, column=1, value="あいうえお")
-ws2.cell(row=1, column=2, value=100)
-ws2.cell(row=1, column=3, value=1.9999999999)
-ws2.cell(row=1, column=4, value=0.25)
+ws2.cell(row=1, column=2, value=int(100))
+ws2.cell(row=1, column=3, value=float(1.9999999999))
+ws2.cell(row=1, column=4, value=float(0.25))
 ws2.cell(row=1, column=5, value=decimal.Decimal("2.9999999999"))
 c = ws2.cell(row=1, column=6, value=datetime.now())
 print(c.number_format)
